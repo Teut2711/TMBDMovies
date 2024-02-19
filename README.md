@@ -1,4 +1,4 @@
-# org.teut2711.tmbd-movies 1.0-SNAPSHOT
+# org.teut2711.tmbd-movies 
 
 This package provides an SDK to simplify interactions with The Movie Database (TMDB) API. It offers convenient methods to access various endpoints, allowing developers to retrieve information about the latest movies, popular movies, and specific movies by ID.
 
@@ -25,13 +25,13 @@ Maven
 <dependency>
     <groupId>org.teut2711</groupId>
     <artifactId>tmbd-movies</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 </dependency>
 ```
 
 Gradle
 ```kotlin
-implementation ('org.teut2711:tmbd-movies:1.0-SNAPSHOT')
+implementation ('org.teut2711:tmbd-movies:1.0')
 ```
 
 
