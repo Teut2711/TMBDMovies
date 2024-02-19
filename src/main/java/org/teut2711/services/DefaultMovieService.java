@@ -23,16 +23,15 @@ public class DefaultMovieService implements MovieService {
     @Override
     public Movie getLatestMovie() throws MoviesException, NoSuchMovieException {
         try{
-            Response response = networkClient.get("https://api.themoviedb.org/3/movie/latest", null);
+            Map<String, String> queryParams = new HashMap<>();
+
+            Response response = networkClient.get("https://api.themoviedb.org/3/movie/latest", queryParams);
             if (response.isSuccessful()) {
                 String responseBody = Objects.requireNonNull(response.body()).string();
                 Gson gson = new Gson();
                 JsonObject jsonObject = gson.fromJson(responseBody, JsonObject.class);
 
-                // Extract the "results" array from the JSON object
-                JsonArray resultsArray = jsonObject.getAsJsonArray("results");
-
-                return gson.fromJson(resultsArray, Movie.class);
+                return gson.fromJson(jsonObject, Movie.class);
             } else {
                 throw new NoSuchMovieException("Page does not exists");
             }
@@ -74,7 +73,9 @@ public class DefaultMovieService implements MovieService {
     @Override
     public Movie getMovieDetails(int movieId) throws MoviesException, NoSuchMovieException {
         try{
-             Response response = networkClient.get("https://api.themoviedb.org/3/movie/"+movieId, null);
+            Map<String, String> queryParams = new HashMap<>();
+
+            Response response = networkClient.get("https://api.themoviedb.org/3/movie/"+movieId, queryParams);
 
             if (response.isSuccessful()) {
                 String responseBody = Objects.requireNonNull(response.body()).string();

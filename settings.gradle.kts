@@ -1,2 +1,2 @@
-rootProject.name = "TMBDMovies"
+rootProject.name = "tmbd-movies"
 

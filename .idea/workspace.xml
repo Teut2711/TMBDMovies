@@ -5,32 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35c14544-6720-4218-aa24-b2aa431259e2" name="Changes" comment="feat: added movie model, network and movies service">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/exceptions/MoviesException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/exceptions/NoSuchMovieException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/exceptions/NoSuchPageException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/exceptions/UrlBuilderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/models/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/network/DefaultNetworkClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/network/MockNetworkClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/network/NetworkClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/services/DefaultMovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/services/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/latestMovie.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/teut2711/models/MovieTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/latestMovie.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/popularMovies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/teut2711/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/teut2711/services/DefaultMovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/services/DefaultMovieService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +21,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tmbd-movies" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,35 +55,38 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2cXcHK9qPEfbDReYH1PiP3FtHIe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build TMBDMovies.executor": "Run",
-    "Gradle.MovieTest.executor": "Run",
-    "Gradle.MovieTest.testMovieCreation.executor": "Run",
-    "Gradle.TMBDMovies [:Main.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mangl/IdeaProjects/TMBDMovies/src/test",
-    "onboarding.tips.debug.path": "C:/Users/mangl/IdeaProjects/TMBDMovies/src/main/java/org/teut2711/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "copyright"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build TMBDMovies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MovieTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MovieTest.testMovieCreation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TMBDMovies [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mangl/IdeaProjects/TMBDMovies/src/test&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mangl/IdeaProjects/TMBDMovies/src/main/java/org/teut2711/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mangl\IdeaProjects\TMBDMovies\src\test" />
@@ -97,7 +100,20 @@
       <recent name="org.teut2711.models" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.teut2711.Main" />
+      <module name="tmbd-movies.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.teut2711.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.teut2711.Main" />
       <module name="TMBDMovies.main" />
@@ -159,8 +175,45 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TMBDMovies [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="TOKEN_GITHUB" value="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" />
+            <entry key="USERNAME_GITHUB" value="Teut2711" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.MovieTest" />
+      <item itemvalue="Gradle.MovieTest.testMovieCreation" />
+      <item itemvalue="Gradle.TMBDMovies [compileJava]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Gradle.TMBDMovies [compileJava]" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.MovieTest" />
         <item itemvalue="Gradle.MovieTest.testMovieCreation" />
@@ -171,6 +224,7 @@
     <attachedChunks>
       <set>
         <option value="jdk-20.0.2-corretto-20.0.2.1-4caba194b151-5bc9ecd2" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -183,7 +237,27 @@
       <option name="presentableId" value="Default" />
       <updated>1708261278254</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: added movie model, network and movies service">
+      <option name="closed" value="true" />
+      <created>1708268942590</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708268942590</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: added movie model, network and movies service" />
