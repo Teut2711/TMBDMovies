@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c14544-6720-4218-aa24-b2aa431259e2" name="Changes" comment="feat: added movie model, network and movies service">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="35c14544-6720-4218-aa24-b2aa431259e2" name="Changes" comment="fix: null passing in DefaultMovieService's getLatestMovie queryparams and keyerror due to indexing on results">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/models/MovieDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/teut2711/models/MovieDetailsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/movieDetails.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/teut2711/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/teut2711/services/DefaultMovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/services/DefaultMovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/teut2711/services/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/services/MovieService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -69,6 +74,7 @@
     &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build TMBDMovies.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MovieDetailsTest.testMovieCreation.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MovieTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MovieTest.testMovieCreation.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TMBDMovies [:Main.main()].executor&quot;: &quot;Run&quot;,
@@ -81,10 +87,10 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/mangl/IdeaProjects/TMBDMovies/src/test&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mangl/IdeaProjects/TMBDMovies/src/main/java/org/teut2711/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -97,6 +103,9 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.teut2711.models" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.teut2711.models" />
     </key>
   </component>
@@ -127,6 +136,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieDetailsTest.testMovieCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.teut2711.models.MovieDetailsTest.testMovieCreation&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MovieTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,30 +174,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.teut2711.models.MovieTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MovieTest.testMovieCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.teut2711.models.MovieTest.testMovieCreation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,17 +215,17 @@
     <list>
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.MovieDetailsTest.testMovieCreation" />
       <item itemvalue="Gradle.MovieTest" />
-      <item itemvalue="Gradle.MovieTest.testMovieCreation" />
       <item itemvalue="Gradle.TMBDMovies [compileJava]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Gradle.MovieDetailsTest.testMovieCreation" />
         <item itemvalue="Gradle.TMBDMovies [compileJava]" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.MovieTest" />
-        <item itemvalue="Gradle.MovieTest.testMovieCreation" />
       </list>
     </recent_temporary>
   </component>
@@ -270,6 +279,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/teut2711/models/MovieTest.java</url>
           <line>19</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/teut2711/models/Movie.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
