@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35c14544-6720-4218-aa24-b2aa431259e2" name="Changes" comment="fix: null passing in DefaultMovieService's getLatestMovie queryparams and keyerror due to indexing on results">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/models/MovieDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/teut2711/models/MovieDetailsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/movieDetails.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/teut2711/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/teut2711/services/DefaultMovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/services/DefaultMovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/teut2711/services/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/teut2711/services/MovieService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
